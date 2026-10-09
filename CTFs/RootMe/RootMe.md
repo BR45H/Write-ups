@@ -21,7 +21,7 @@ sudo nmap -sS --top-ports=1000 -Pn -T4 10.66.173.173
 
 And after that, I refined the scan to discovered ports:
 
-![](images/nmap.png)
+![](./images/nmap.png)
 
 ## 3. Enumeration
 
@@ -47,7 +47,7 @@ For the next step I changed the name to end with `.php.txt` and it was uploaded,
 
 I went to directory `/uploads/` and execute the file, getting a reverse shell:
 
-![](.images/reverse-shell.png)
+![](./images/reverse-shell.png)
 
 And searching for the first flag I found it inside the file: `var/www/user.txt`
 
